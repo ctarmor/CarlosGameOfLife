@@ -36,6 +36,11 @@ function mapNeighbours(row, col, squareSz) {
     for (let nr = row - 1; nr < row + 2; nr++) {
         for (let nc = col - 1; nc < col + 2; nc++) {
 
+            if (row == nr && col == nc) {
+                // Skip self location from sequence
+                continue;
+            }
+
             // avoid edges
             if (nr > -1 && nc > -1 && nr < squareSz && nc < squareSz) { 
                 neighbours.push({
@@ -51,17 +56,18 @@ function mapNeighbours(row, col, squareSz) {
 
 // -------------------------------------------------
 // https://jrgraphix.net/r/Unicode/2580-259F
-const lifesymbol = '\u2580';
+const lifesymbol = '\u2588';
+const clearScreen = '\033c';
 
 // -------------------------------------------------
 function print(surface) {
 
     const output = surface
-        .map(r => r.map(c => c.livecell == 1 ? lifesymbol : ' ').join(''))
+        .map(r => r.map(c => c.livecell == 1 ? lifesymbol : ' ').join(' '))
         .join('\n')
         ;
 
-    process.stdout.write('\033c');
+    process.stdout.write(clearScreen);
     console.log(output);
 }
 

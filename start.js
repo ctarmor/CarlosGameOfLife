@@ -41,7 +41,7 @@ function runGeneration() {
 
     setTimeout(() => {
         runGeneration();
-    }, 1000);
+    }, 150);
 }
 
 
