@@ -34,5 +34,5 @@ Each cell is the following JSON object:
 
 There is a print() method wherer we an switch to display the number of neighbours instead of the square.
 
-
+![Alt text](/Screenshot.png "Optional Title")
 
