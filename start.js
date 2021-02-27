@@ -31,7 +31,7 @@ const populator = require('./populator');
 //
 
 const squareSize = 40;
-const timerMs = 150;
+const timerMs = 1000;
 
 // Init 2 identical working surfaces
 var livesurface = surface.getNew(squareSize);
