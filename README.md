@@ -4,7 +4,9 @@ NodeJs implementaion of the [Game Of Life](https://en.wikipedia.org/wiki/Conway%
 
 
 ## Run command
-node start.js
+node [start.js](https://github.com/ctarmor/CarlosGameOfLife/blob/master/start.js)
+
+The is recursive method, runGeneration(), using a setTieout() of 1 second.  Lower the timeout if you want to see it rendering faster. 
 
 
 ## Implemention Overview
