@@ -32,7 +32,7 @@ Each cell is the following JSON object:
 }
 </pre>
 
-There is a print() method wherer we an switch to display the number of neighbours instead of the square.
+There is a print() method where we can switch to display the number of neighbours instead of the square.
 
 ![Alt text](/Screenshot.png "Optional Title")
 
