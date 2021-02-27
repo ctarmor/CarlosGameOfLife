@@ -1,8 +1,15 @@
 const surface = require('./surface');
 const populator = require('./populator');
 
+
+// to run:
+//  
+//  nodejs start.js
+
+
 //
 // Overview:
+//
 // There are 2 surfaces available. Each surface is statically
 // preloaded with all cells, and vector coordinates to all the neighbours
 // for each cell.
@@ -23,12 +30,12 @@ const populator = require('./populator');
 // }
 //
 
-const squareSz = 40;
+const squareSize = 40;
 const timerMs = 150;
 
 // Init 2 identical working surfaces
-var livesurface = surface.getNew(squareSz);
-var nextsurface = surface.getNew(squareSz);
+var livesurface = surface.getNew(squareSize);
+var nextsurface = surface.getNew(squareSize);
 
 //--------------------------------------------
 runGeneration();
