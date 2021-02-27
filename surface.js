@@ -65,7 +65,7 @@ function print(surface) {
     const output = surface
         // .map(r => r.map(c => c.livecell ? c.livecell : ' ')  // Display neighbour count
         .map(r => r.map(c => c.livecell ? lifesymbol : ' ') // Display symbol
-            .join(''))  
+            .join(' '))  
             .join('\n')
         ;
 
