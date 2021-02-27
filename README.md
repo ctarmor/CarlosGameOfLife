@@ -20,7 +20,7 @@ One surface is live, while the other one is a cache for the next generation.
 Each cell is the following JSON object:
 <pre>
 {
-    livecell: 1 == live | 0 == dead,
+    livecell: !null == live | null == dead,  
     row: number, 
     col: number,
     neighbours: [{
