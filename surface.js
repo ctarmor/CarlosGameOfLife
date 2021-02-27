@@ -25,7 +25,7 @@ function getNew(squareSz) {
 function getRandomCellLife() {
     min = Math.ceil(0); 
     max = Math.floor(1);
-    return Math.random() > 0.5 ? 1 : 0;
+    return Math.random() > 0.5 ? 1 : null;
 }
 
 // -------------------------------------------------
@@ -56,15 +56,17 @@ function mapNeighbours(row, col, squareSz) {
 
 // -------------------------------------------------
 // https://jrgraphix.net/r/Unicode/2580-259F
-const lifesymbol = '\u2588';
+const lifesymbol = '\u2588'; 
 const clearScreen = '\033c';
 
 // -------------------------------------------------
 function print(surface) {
 
     const output = surface
-        .map(r => r.map(c => c.livecell == 1 ? lifesymbol : ' ').join(' '))
-        .join('\n')
+        // .map(r => r.map(c => c.livecell ? c.livecell : ' ')  // Display neighbour count
+        .map(r => r.map(c => c.livecell ? lifesymbol : ' ') // Display symbol
+            .join(''))  
+            .join('\n')
         ;
 
     process.stdout.write(clearScreen);
