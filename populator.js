@@ -30,11 +30,11 @@ function generateCell(livesurface, cell) {
 
     // Any live cell with two or three live neighbours survives.
     // Any dead cell with three live neighbours becomes a live cell.
-    if (liveNeighbours == 3) {
+    if (liveNeighbours === 3) {
         return liveNeighbours;
     }
 
-    if (cell.livecell && liveNeighbours == 2) {
+    if (cell.livecell && liveNeighbours === 2) {
         return liveNeighbours;
     }
 
