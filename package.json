@@ -1,0 +1,22 @@
+{
+  "name": "carlosgameoflife",
+  "version": "1.0.0",
+  "description": "NodeJs implementaion of the [Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) version in Wikipedia",
+  "main": "start.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctarmor/CarlosGameOfLife.git"
+  },
+  "author": "Carlos Alvarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctarmor/CarlosGameOfLife/issues"
+  },
+  "homepage": "https://github.com/ctarmor/CarlosGameOfLife#readme",
+  "dependencies": {
+    "mocha": "^8.3.0"
+  }
+}

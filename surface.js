@@ -1,6 +1,6 @@
 
 // -------------------------------------------------
-function getNew(squareSz) {
+function getNew(squareSz, initialize = true) {
     let surface = [];
 
     for (let row = 0; row < squareSz; row++) {
@@ -10,7 +10,7 @@ function getNew(squareSz) {
         for (let col = 0; col < squareSz; col++) {
             r.push({
                 // Cache all neighbours and current cell location
-                livecell: getRandomCellLife(),
+                livecell: initialize ? getRandomCellLife() : null,
                 row: row,
                 col: col, 
                 neighbours: mapNeighbours(row, col, squareSz)
