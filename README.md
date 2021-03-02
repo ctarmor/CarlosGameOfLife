@@ -2,11 +2,14 @@
 
 NodeJs implementaion of the [Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) version in Wikipedia
 
+There is a recursive method in start.js, runGeneration(), using a setTimeout() of 1 second.  Lower the timeout for faster rendering. 
 
 ## Run command
 node [start.js](https://github.com/ctarmor/CarlosGameOfLife/blob/master/start.js)
 
-There is a recursive method, runGeneration(), using a setTieout() of 1 second.  Lower the timeout for faster rendering. 
+## Unit Test command
+npm test
+
 
 
 ## Implemention Overview
